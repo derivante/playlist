@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visto antes, mas ignorado</title>
+
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            width: 100%;
+            height: 100%;
+        }
+
+        form{
+            width: 500px;
+            margin: 0px auto;
+            text-align: center;
+        }
+
+        input{
+            display: block;
+            margin: 10px auto;
+            width: 250px;
+            height: 30px;
+        }
+
+
+        
+    </style>
+
+</head>
+<body>
+    
+
+    <form>
+        <img src="Trace.png"
+
+        width="500"
+        height="300">
+        <font face="Calibri "> Sierra Romeo Quebec Victor 9 5 1a 2a 3a 7 2 1
+        </font> <br />
+        
+        <font face="Calibri "> Papa Uniform Zulu 4 9 1a 2a 3a 
+        </font> <br />
+        <font face="Calibri "> Tango Yankee 3 8 CODE
+        </font> <br />
+        <font face="Calibri "> Quebec Victor 0 5 1a 3a 2 Whiskey
+        </font> <br />
+        <font face="Calibri "> Romeo Quebec Papa Uniform Zulu 0 1 0 Zulu 4 9 1a 2a
+        </font> <br />
+
+        <input type="password" placeholder="Senha" id="senha">
+        <input type="submit" onclick="logar(); return false">
+
+    </form>
+
+
+    <script>
+
+
+        function logar(){
+
+            var senha = document.getElementById('senha').value;
+
+            if(senha == "glide"){
+                alert('Sucesso');
+                location.href = "https://open.spotify.com/playlist/16zUVGoH8Xh9FVI4JHvLed?si=241208e30d134925";
+            }else{
+                alert('siga o caminho');
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>
